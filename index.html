@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <button id="themeBtn" onclick="toggleTheme()">
+    Dark Mode
+</button>
+
+        <div id="dateTime"></div>
+
+        <input type="text" id="city" placeholder="Enter city name">
+
+        <button onclick="getWeather()">
+            Search
+        </button>
+         
+       <button onclick="getLocationWeather()">
+    Use My Location
+</button>
+
+        <div id="result">
+
+        </div>
+
+        <div id="forecast"></div>
+          
+       <h2>Search History</h2>
+
+<ul id="history"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.container{
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+    color:white;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+#dateTime{
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    color:white;
+
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#0072ff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:20px;
+    min-height:200px;
+}
+
+img{
+    width:100px;
+}
+
+@media(max-width:500px){
+
+    .container{
+
+        width:90%;
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    input{
+
+        font-size:14px;
+
+    }
+
+    button{
+
+        font-size:14px;
+
+    }
+
+    #result h2{
+
+        font-size:24px;
+
+    }
+
+    #result h3{
+
+        font-size:20px;
+
+    }
+
+    img{
+
+        width:80px;
+
+    }
+
+}
+
+#forecast{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.forecast-card{
+
+    background:rgba(255,255,255,0.2);
+
+    padding:10px;
+
+    border-radius:10px;
+
+    width:90px;
+
+    color:white;
+
+}
+
+.dark-mode{
+
+    background:#121212 !important;
+
+}
+
+.dark-mode .container{
+
+    background:rgba(0,0,0,0.4);
+
+    color:white;
+
+}
+
+.dark-mode input{
+
+    background:#222;
+
+    color:white;
+
+}
+
+.dark-mode button{
+
+    background:#333;
+
+    color:white;
+
+}
+
+#history{
+
+    margin-top:15px;
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+#history li{
+
+    background:rgba(255,255,255,0.2);
+
+    margin:5px 0;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+#history li:hover{
+
+    background:rgba(255,255,255,0.4);
+
+}
